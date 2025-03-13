@@ -6,3 +6,18 @@ void main(List<String> arguments) {
  	print(lb.sname(x));
   
 }
+class switchvar{
+	String sname(String color){
+		var choice = switch(color){
+			('red' || 'Red' || 'RED') => 'Danger',
+			('blue' || 'Blue' || 'BLUE') => 'Cool',
+			('white' || 'White' || 'WHITE') => 'Peace',
+			('green' || 'Green' || 'GREEN') => 'Nature',
+			_ => 'Not Listed',
+		};
+		return choice;
+	}
+}
+			
+	
+
